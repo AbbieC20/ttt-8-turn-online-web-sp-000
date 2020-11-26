@@ -23,10 +23,9 @@ def position_taken?(board, index)
 end
 
 def valid_move? (board, index)
-  if index > 8
+  if index > 8 || index < 0 || position_taken?(board, index) == true
     return false
-  elsif board[index] == "X" || board[index] == "O"
-    return false
-  elsif board[index] == " " || board[index] == "" || board[index] == nil
+  else
     return true
+  end
 end
