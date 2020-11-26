@@ -37,6 +37,6 @@ def turn(board)
   if valid_move?(board, index) == false
     puts "Have another try"
   else
-    display_board(board)
+    move(board, index)
   end
 end
