@@ -30,7 +30,7 @@ def valid_move? (board, index)
   end
 end
 
-def turn(board)
+def turn(board) # using recursion
   puts "Please enter 1-9:"
   input = gets.strip
   index = input_to_index(input)
@@ -43,7 +43,7 @@ def turn(board)
   end
 end
 
-def turn(board)
+def turn(board) # using a while loop
   puts "Please enter 1-9:"
   input = gets.strip
   index = input_to_index(input)
