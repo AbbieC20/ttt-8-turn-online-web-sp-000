@@ -38,5 +38,7 @@ def turn(board)
     puts "Have another try"
   else
     move(board, index)
+    #
   end
+  display_board(board)
 end
